@@ -1,10 +1,10 @@
 # SaaS Veterinaria
 
-🚀 **URL de Producción:** [https://saa-s-veterinaria.vercel.app/](https://saa-s-veterinaria.vercel.app/)
+**URL de Producción:** [https://saa-s-veterinaria.vercel.app/](https://saa-s-veterinaria.vercel.app/)
 
 Este repositorio contiene el código fuente para el proyecto SaaS Veterinaria.
 
-## 🌿 Estrategia de Ramas (Branching)
+## Estrategia de Ramas (Branching)
 
 Para mantener un entorno de desarrollo organizado y libre de conflictos, utilizamos el siguiente flujo de trabajo con las ramas:
 
@@ -21,7 +21,7 @@ Para mantener un entorno de desarrollo organizado y libre de conflictos, utiliza
 
 ---
 
-## 💻 Cómo correr localmente
+## Cómo correr localmente
 
 Sigue estos pasos para levantar el entorno de desarrollo localmente:
 
@@ -44,7 +44,11 @@ Sigue estos pasos para levantar el entorno de desarrollo localmente:
    npm run dev
    ```
 
-### 🗄️ Configurar la Base de Datos con Supabase CLI (Recomendado)
+##Liberación y despliegue continuo
+
+El pipeline de GitHub Actions valida los PR hacia `dev`/`main` y despliega a Vercel al actualizar `main`. La configuración de los secretos, el entorno protegido `production`, las pruebas y los objetivos de servicio está descrita en [docs/ci-cd-saas-veterinaria.md](docs/ci-cd-saas-veterinaria.md).
+
+### Configurar la Base de Datos con Supabase CLI (Recomendado)
 
 Para conectarte al proyecto en línea, descargar la versión más reciente de la base de datos y montar un entorno local para pruebas sin afectar producción:
 
@@ -76,7 +80,7 @@ Para conectarte al proyecto en línea, descargar la versión más reciente de la
 
 ---
 
-## 🐳 Cómo levantar todo el proyecto en local con Docker (Full Stack)
+## Cómo levantar todo el proyecto en local con Docker (Full Stack)
 
 El proyecto completo (Frontend + Base de Datos Supabase) está dockerizado para que no haya problemas de compatibilidad. 
 
@@ -103,7 +107,7 @@ Una vez que Supabase está corriendo, puedes levantar la aplicación web.
 ```bash
 docker compose up -d --build
 ```
-3. ¡Listo! La aplicación frontend de Next.js estará disponible en tu navegador en: 👉 **http://localhost:3000**
+3. ¡Listo! La aplicación frontend de Next.js estará disponible en tu navegador en: **http://localhost:3000**
 
 ### Comandos útiles para apagar el entorno
 
